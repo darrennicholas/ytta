@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe8f0">
+  <title>Do you miss me?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" id="main-card" aria-labelledby="question">
+    <span class="flower flower-one" aria-hidden="true">🌸</span>
+    <span class="flower flower-two" aria-hidden="true">🌷</span>
+    <span class="flower flower-three" aria-hidden="true">🌼</span>
+    <span class="flower flower-four" aria-hidden="true">💐</span>
+
+    <div class="cat-frame">
+      <img id="cat" src="https://media.giphy.com/media/y4nk5bgwpWL6T5Ax9y/giphy.gif" alt="A cute cat meme waving hello" referrerpolicy="no-referrer">
+      <span class="heart" aria-hidden="true">♥</span>
+    </div>
+    <p class="eyebrow">a tiny question for you</p>
+    <h1 id="question">Do you miss me?</h1>
+    <p class="subtitle" id="subtitle">I miss you so much <span>♡</span></p>
+
+    <div class="button-stage" id="button-stage">
+      <button class="button yes-button" id="yes-button" type="button">Yes! <span aria-hidden="true">💚</span></button>
+      <button class="button no-button" id="no-button" type="button">No <span aria-hidden="true">💛</span></button>
+    </div>
+    <p class="hint" id="hint" aria-live="polite">Choose honestly… 🌷</p>
+  </main>
+
+  <section class="love-survey" id="love-survey" aria-labelledby="survey-title" aria-hidden="true">
+    <div class="rainbow" aria-hidden="true"></div>
+    <div class="celebration" id="celebration" aria-hidden="true"></div>
+    <span class="floating flower-a" aria-hidden="true">🌸</span>
+    <span class="floating flower-b" aria-hidden="true">🌷</span>
+    <span class="floating flower-c" aria-hidden="true">💐</span>
+    <span class="floating flower-d" aria-hidden="true">🌼</span>
+    <div class="survey-card">
+      <div class="survey-cat cat-frame"><img id="happy-cat" src="https://media.giphy.com/media/bOXnd3kig533u93OND/giphy.gif" alt="A happy cat celebrating" referrerpolicy="no-referrer"></div>
+      <p class="eyebrow">one more little thing</p>
+      <h1 id="survey-title">A little love quiz 💕</h1>
+      <p class="subtitle">Pick your answers and leave me a tiny note.</p>
+      <form id="love-form">
+        <p class="quiz-progress" id="quiz-progress" aria-live="polite">Question 1 of 3</p>
+        <fieldset class="quiz-question">
+          <legend>1. What should we do together next?</legend>
+          <label><input type="radio" name="next-date" value="movie" required> Cozy movie night</label>
+          <label><input type="radio" name="next-date" value="food"> Get something yummy</label>
+          <label><input type="radio" name="next-date" value="walk"> A little sunset walk</label>
+          <label><input type="radio" name="next-date" value="surprise"> Surprise me!</label>
+        </fieldset>
+        <fieldset class="quiz-question" hidden>
+          <legend>2. Pick our perfect mood:</legend>
+          <label><input type="radio" name="mood" value="silly" required> Silly and giggly</label>
+          <label><input type="radio" name="mood" value="cozy"> Cozy and cuddly</label>
+          <label><input type="radio" name="mood" value="adventure"> A tiny adventure</label>
+          <label><input type="radio" name="mood" value="anything"> Anything with you</label>
+        </fieldset>
+        <fieldset class="quiz-question" hidden>
+          <legend>3. How much did you miss me?</legend>
+          <label><input type="radio" name="missed" value="little" required> A little bit</label>
+          <label><input type="radio" name="missed" value="lots"> A whole lot</label>
+          <label><input type="radio" name="missed" value="tons"> More than all the stars</label>
+          <label><input type="radio" name="missed" value="secret"> That's a secret 🤭</label>
+        </fieldset>
+        <div id="note-wrap" hidden>
+        <label class="note-label" for="love-note">Leave me a little note (optional)</label>
+        <textarea id="love-note" name="note" rows="2" placeholder="Type something sweet…"></textarea>
+        </div>
+        <div class="quiz-actions">
+          <button class="button back-button" id="quiz-back" type="button" hidden>← Back</button>
+          <button class="button submit-button" id="quiz-next" type="button">Next →</button>
+          <button class="button submit-button" id="quiz-submit" type="submit" hidden>Send my answers 💌</button>
+        </div>
+        <p class="form-message" id="form-message" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <section class="love-ending" id="love-ending" aria-labelledby="ending-title" aria-hidden="true">
+    <div class="ending-rainbow" aria-hidden="true"></div>
+    <div class="celebration" id="ending-celebration" aria-hidden="true"></div>
+    <span class="ending-decoration ending-flower" aria-hidden="true">🌷</span>
+    <span class="ending-decoration ending-heart" aria-hidden="true">💖</span>
+    <span class="ending-decoration ending-butterfly" aria-hidden="true">🦋</span>
+    <span class="ending-decoration ending-bouquet" aria-hidden="true">💐</span>
+    <div class="ending-card">
+      <p class="ending-kicker">a little love note for you ✨</p>
+      <div class="ending-cat cat-frame">
+        <img src="https://media.giphy.com/media/bOXnd3kig533u93OND/giphy.gif" alt="A happy cat celebrating" referrerpolicy="no-referrer">
+        <span class="heart" aria-hidden="true">♥</span>
+      </div>
+      <h1 id="ending-title" tabindex="-1">I love u sayang <span>💗</span></h1>
+      <p class="ending-message">You make my world a little brighter, a lot sweeter, and so much more colorful. 🌈</p>
+      <p class="ending-signature">Sending you a million hugs &amp; kisses! 💌</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
